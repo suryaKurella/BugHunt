@@ -1,0 +1,9 @@
+java -classpath randoop-all-4.3.0.jar:./target/classes randoop.main.Main gentests --testclass=org.apache.commons.lang
+3.ArrayUtils --output-limit=100 --junit-output-dir=/mnt/c/Users/kurel/IdeaProjects/commons-lang/src/test/java/org/apache/commons/lang3
+
+
+
+java -classpath randoop-all-4.3.0.jar:./target/classes/ randoop.main.Main gentests --testclass=com.baeldung.avltree.AVLTree --output-limit=100
+
+
+mvn surefire-report:report
