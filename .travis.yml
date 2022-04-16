@@ -11,9 +11,7 @@ uses: codecov/codecov-action@v3.0.0
 
 sudo: false
 script:
-  - java -version
   - mvn clean install
-  - mvn clean package
   - mvn -Dcores=2 evosuite:generate
   - mvn evosuite:export
   - mvn test
