@@ -16,8 +16,8 @@ script:
   - mvn evosuite:export
   - mvn test
   - bash <(curl -s https://codecov.io/bash)
-#  - curl -Os https://uploader.codecov.io/latest/linux/codecov
-#  - chmod +x codecov ./codecov
+  - curl -Os https://uploader.codecov.io/latest/linux/codecov
+  - chmod +x codecov ./codecov
 
 
 
