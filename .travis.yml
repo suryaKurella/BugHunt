@@ -5,23 +5,23 @@ language: java
 
 jdk: openjdk8
 
-name: Codecov
-uses: codecov/codecov-action@v3.0.0
+#name: Codecov
+#uses: codecov/codecov-action@v3.0.0
 
 
 sudo: false
 script:
   - mvn clean
-#  - mvn evosuite:generate
-#  - mvn evosuite:export
-  - mvn test
-#  - mvn jacoco:report coveralls:report
-  - mvn evosuite:info
+  - mvn evosuite:generate
+  - mvn evosuite:export
+#  - mvn test
+  - mvn jacoco:report coveralls:report
+#  - mvn evosuite:info
 
 
 
 
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-  - curl -Os https://uploader.codecov.io/latest/linux/codecov
-  - chmod +x codecov ./codecov
+#after_success:
+#  - bash <(curl -s https://codecov.io/bash)
+#  - curl -Os https://uploader.codecov.io/latest/linux/codecov
+#  - chmod +x codecov ./codecov
