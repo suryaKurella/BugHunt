@@ -11,7 +11,7 @@ jdk: openjdk8
 
 sudo: false
 script:
-  - mvn clean
+#  - mvn clean
   - mvn evosuite:generate
   - mvn evosuite:export
 #  - mvn test
