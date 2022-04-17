@@ -16,7 +16,7 @@ script:
 #  - mvn evosuite:export
   - mvn test
 #  - mvn jacoco:report coveralls:report
-#  - mvn evosuite:info
+  - mvn evosuite:info
 
 
 
