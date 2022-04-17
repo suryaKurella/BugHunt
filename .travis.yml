@@ -12,14 +12,14 @@ uses: codecov/codecov-action@v3.0.0
 sudo: false
 script:
   - mvn clean
-  - mvn evosuite:generate
-  - mvn evosuite:export
-  - mvn test
-#  - mvn test jacoco:report
-#  - mvn test jacoco:report coveralls:report
-  - bash <(curl -s https://codecov.io/bash)
-  - curl -Os https://uploader.codecov.io/latest/linux/codecov
-  - chmod +x codecov ./codecov
+#  - mvn evosuite:generate
+#  - mvn evosuite:export
+#  - mvn test
+  - mvn test jacoco:report
+  - mvn test jacoco:report coveralls:report
+#  - bash <(curl -s https://codecov.io/bash)
+#  - curl -Os https://uploader.codecov.io/latest/linux/codecov
+#  - chmod +x codecov ./codecov
 
 
 
