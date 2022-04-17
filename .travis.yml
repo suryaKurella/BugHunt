@@ -12,7 +12,7 @@ uses: codecov/codecov-action@v3.0.0
 sudo: false
 script:
   - mvn clean
-  - mvn -Dcores=1 evosuite:generate
+  - mvn evosuite:generate
   - mvn evosuite:export
   - mvn test
   - bash <(curl -s https://codecov.io/bash)
